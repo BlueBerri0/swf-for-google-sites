@@ -1,8 +1,6 @@
-# swf-for-google-sites
+# Flash games for google sites
 
+copy embed code
+replace GAME_FILE_HERE with the game file name 
 
-# copy embed code
-
-# replace GAME_NAME_HERE with the game file name 
-
-# put the embed code into your google site
+put the embed code into your google site
