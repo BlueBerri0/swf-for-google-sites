@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloons Tower Defense</title>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <title>Embed SWF with Ruffle</title>
 </head>
 <body>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <script>
         window.RufflePlayer = window.RufflePlayer || {};
-        window.addEventListener("DOMContentLoaded", () => {
+        window.addEventListener("load", (event) => {
             const ruffle = window.RufflePlayer.newest();
             const player = ruffle.createPlayer();
-            document.body.appendChild(player);
-            player.load("https://Blueberri0.github.io/games/GAME_NAME_HERE.swf");
+            const container = document.getElementById("flash-container");
+            container.appendChild(player);
+            player.load("https://raw.githubusercontent.com/Blueberri0/swf-for-google-sites/main/bloons-tower-defense-5.swf");
         });
     </script>
+    <div id="flash-container"></div>
 </body>
 </html>
